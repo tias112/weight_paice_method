@@ -25,7 +25,7 @@ class Stemmer:
             return dict(zip(words.split(' '), stems))
         return {}
     
-class SpicyStemmer(Stemmer):
+class SpacyStemmer(Stemmer):
     def __init__(self, model, name='default'):
         self.nlp = spacy.load(model)
         self.name = name
